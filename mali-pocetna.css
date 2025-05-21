@@ -1,4 +1,4 @@
-body {
+ body {
 	margin: 0px;
 	padding: 0px;
 	width: 360px;
@@ -55,7 +55,7 @@ body {
   background-color: #333;
   color: white;
   padding: 20px;
-  width: 270px;
+  width: 260px;
   height: 100vh;
   border-radius: 0 10px 10px 0;
   z-index: 103;
@@ -173,7 +173,7 @@ body {
       z-index: 100;
       background-color: black;
       height: 50px;
-      width: 88.50%;
+      width: 340px;
       position: fixed;
       top: 0px;
       display: flex;
