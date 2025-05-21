@@ -2,7 +2,7 @@
 	{
 		"id": "naruto shippuden",
 		"naziv": "Naruto Shippuden",
-		"slika": "../slike/Naruto.jpg",
+		"slika": "Naruto.jpg",
 		"opis": "Naruto Shippuuden je nastavak prve sezone, smešten dvije i po godine kasnije. Naruto se vraća u Konohu, susreće stare i nove prijatelje te se suočava s novim neprijateljima. Prva misija mu je spasiti Gaaru, Kazekagea Sune, dok se bori protiv zloglasne organizacije Akatsuki.",
 		"epizode": [
 			{ "broj": 1, "video": "vi.2.mp4" },
@@ -55,7 +55,7 @@
 	{
 		"id": "citrus",
 		"naziv": "Citrus",
-		"slika": "../slike/citrus.jpg",
+		"slika": "citrus.jpg",
 		"opis": "Tokom leta prve godine srednje škole, Yuzu se zbog majčine udaje prebacuje u novu, strogu školu. Nada se novim prijateljima i prvoj ljubavi, ali ubrzo nailazi na razočaranje. Njena pojava privlači pažnju Mei, članice učeničkog veća. Šta će se dalje desiti?",
 		"epizode": [
 			{ "broj": 1, "video": "vi.2.mp4" },
@@ -79,7 +79,7 @@
 	{
 		"id": "kiss and sis",
 		"naziv": "Kiss and sis",
-		"slika": "../slike/kissandsis.jpg",
+		"slika": "kissandsis.jpg",
 		"opis": "Nakon majčine smrti, Keitin otac se ponovno ženi, donoseći u njegov život bliznakinje Ako i Riku. Od prvog susreta, sestre razvijaju zabranjene osjećaje prema njemu i bore se za njegovo srce. Na kraju srednje škole, Keita se trudi upisati istu školu kao one, dok se nosi s vlastitim emocijama i sve većim iskušenjima – ne samo od sestara.",
 		"epizode": [
 			{ "broj": 1, "video": "vi.2.mp4" },
@@ -102,7 +102,7 @@
 	{
 		"id": "the eminence in shadow",
 		"naziv": "The Eminence in Shadow",
-		"slika": "../slike/emi.jpg",
+		"slika": "emi.jpg",
 		"opis": "Cid ne želi da bude heroj ni zlikovac — već mozak iz senke. U prošlom životu to nije uspio, ali nakon reinkarnacije u svetu magije, kreira lažnu organizaciju Shadow Garden da bi, iz pozadine, uništio izmišljeni kult. Međutim, kult Diabolos se ispostavlja kao stvaran, pa Cid, misleći da glumi, nesvjesno vodi rat iz senke.",
 		"epizode": [
 			{ "broj": 1, "video": "vi.2.mp4" },
@@ -119,13 +119,13 @@
 		"studijo": "Nexus",
 		"stprevođenja": "Završeno",
 		"zanrovi": ["Akcija", "Fantazija", "Komedija"],
-		"kvadrat": "slike/theemi.jpg"
+		"kvadrat": "theemi.jpg"
 	},
 	
 	{
 		"id": "netsuzou trap",
 		"naziv": "Netsuzou Trap",
-		"slika": "../slike/nettr.jpg",
+		"slika": "nettr.jpg",
 		"opis": "Srednjoškolke Yuma i Hotaru su prijateljice iz detinjstva koje provode vreme sa svojim momcima, uživajući u bezbrižnom tinejdžerskom životu. Međutim, tokom jednog druženja, Hotaru neočekivano prelazi granicu i pokazuje Yumi više od prijateljskih osećanja, što stvara konfuziju i napetost u njihovom odnosu.",
 		"epizode": [
 			{ "broj": 1, "video": "vi.2.mp4" },
