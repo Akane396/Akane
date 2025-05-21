@@ -49,3 +49,53 @@ function search() {
 		.catch(error => console.error("Greška pri učitavanju JSON-a:", error));
 }
 
+const img = document.getElementById('slider-image');
+  const title = document.getElementById('anime-title');
+  const link = document.getElementById('anime-link');
+  const prev = document.getElementById('prev');
+  const next = document.getElementById('next');
+  
+  let animeList = [];
+  let currentIndex = 0;
+  let interval;
+  
+  function showAnime(index) {
+  	const anime = animeList[index];
+  	img.src = anime.kvadrat
+  	title.textContent = anime.naziv;
+  	link.href = `videi.html?id=${encodeURIComponent(anime.id)}`;
+  }
+  
+  function startAutoSlide() {
+  	interval = setInterval(() => {
+  		currentIndex = (currentIndex + 1) % animeList.length;
+  		showAnime(currentIndex);
+  	}, 4000); // svakih 10 sekundi
+  }
+  
+  function stopAutoSlide() {
+  	clearInterval(interval);
+  }
+  
+  fetch('struktura.json')
+  	.then(res => res.json())
+  	.then(data => {
+  		animeList = data;
+  		showAnime(currentIndex);
+  		startAutoSlide();
+  	});
+  
+  prev.addEventListener('click', () => {
+  	stopAutoSlide();
+  	currentIndex = (currentIndex - 1 + animeList.length) % animeList.length;
+  	showAnime(currentIndex);
+  	startAutoSlide();
+  });
+  
+  next.addEventListener('click', () => {
+  	stopAutoSlide();
+  	currentIndex = (currentIndex + 1) % animeList.length;
+  	showAnime(currentIndex);
+  	startAutoSlide();
+  });
+  
