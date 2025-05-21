@@ -232,3 +232,73 @@ body {
   margin-left: -5px;
 }
 
+.slider-container > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.slider-container {
+  position: relative;
+  width: 97%;
+  max-width: 600px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #2e2e2e;
+}
+
+#slider-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+}
+
+.anime-title {
+  background: #000000CC;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 0 10px 10px;
+}
+
+#prev, #next {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#prev {
+  left: 10px;
+}
+
+#prev img,
+#next img {
+  width: 40px;
+  /* ili koliko ti odgovara */
+  height: auto;
+}
+
+#next {
+  right: 10px;
+}
+
+/* Ukloniti tačkice ako ih ne želiš */
+.dots {
+  display: none;
+}
+
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+  /* po želji, možeš promijeniti */
+}
+
