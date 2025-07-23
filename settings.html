@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Podesavanja</title>
+  <link rel="stylesheet" href="postavke.css">
+  <link rel="icon" href="/animate.png" type="image/x-icon" />
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 0px;
+      margin: 0px;
+      background-color: #1e1e2f;
+    }
+
+    #avatarPreview {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #ccc;
+      margin-top: 20px;
+    }
+
+    #changeBtn, #saveBtn {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 20px;
+      border: none;
+    }
+
+    #changeBtn {
+      margin-top: 40px;
+    }
+
+    #saveBtn {
+      margin-top: 20px;
+    }
+
+    #iconUpload {
+      display: none;
+    }
+
+    #username {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 19px;
+      color: white;
+    }
+    
+    #vrati > a {
+      margin-left: 5px;
+      text-decoration: none;
+    }
+    
+    #strelica {
+      width: 30px;
+      height: 30px;
+      margin-top: 0px;
+    }
+    
+    h2 {
+      margin-left: 100px;
+      margin-top: -50px;
+      color: white;
+    }
+    
+    .svi {
+      background-color: #2c2c3a;
+      width: 350px;
+      height: 400px;
+      text-align: center;
+      margin-left: 18px;
+      margin-top: 90px;
+      border-radius: 15px;
+    }
+    
+    
+  </style>
+</head>
+<body>
+<p id="vrati">
+  <a href="index.html"> 
+    <img id="strelica"  src="arrow-small.png" alt="vrati">
+  </a>
+</p>
+  
+  <h2>Podešavanje profila</h2>
+
+<div class="svi">
+  <img id="avatarPreview" src="" alt="Avatar" />
+  <div id="username"></div>
+
+  
+  <button id="changeBtn" onclick="document.getElementById('iconUpload').click()">Izmeni ikonicu</button>
+  <input type="file" id="iconUpload" accept="image/*" />
+  <br />
+  <button id="saveBtn" onclick="saveIcon()">Sačuvaj</button>
+
+</div>
+  <script>
+    const fileInput = document.getElementById('iconUpload');
+    const preview = document.getElementById('avatarPreview');
+    const usernameDisplay = document.getElementById('username');
+    const loggedInUser = localStorage.getItem("loggedInUser");
+
+    // Prikaz slike i imena korisnika
+    window.onload = function() {
+      if (loggedInUser) {
+        usernameDisplay.textContent = loggedInUser;
+
+        const savedAvatar = localStorage.getItem("avatar_" + loggedInUser);
+        if (savedAvatar) {
+          preview.src = savedAvatar;
+        } else {
+          preview.src = "https://via.placeholder.com/120?text=Avatar";
+        }
+      } else {
+        usernameDisplay.textContent = "Nema prijavljenog korisnika";
+      }
+    };
+
+    // Prikaz nove slike pre čuvanja
+    fileInput.onchange = function () {
+      const file = fileInput.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        preview.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+    };
+
+    function saveIcon() {
+      const file = fileInput.files[0];
+      if (!file) return alert("Izaberi sliku!");
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const base64 = e.target.result;
+        if (loggedInUser) {
+          localStorage.setItem("avatar_" + loggedInUser, base64);
+          alert("Ikonica sačuvana!");
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+  </script>
+</body>
+</html>
