@@ -28,7 +28,7 @@ if (document.getElementById("loginForm")) {
     if (storedPassword === password) {
       localStorage.setItem("loggedInUser", username);
       alert("Prijava uspešna!");
-      window.location.href = "index.html";
+      window.location.href = "Anime.html";
     } else {
       alert("Pogrešno korisničko ime ili šifra.");
     }
