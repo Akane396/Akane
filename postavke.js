@@ -12,7 +12,7 @@
         if (savedAvatar) {
           preview.src = savedAvatar;
         } else {
-          preview.src = "https://via.placeholder.com/120?text=Avatar";
+          preview.src ="default.png";
         }
       } else {
         usernameDisplay.textContent = "Nema prijavljenog korisnika";
