@@ -62,7 +62,7 @@ select:focus {
 
 .navbar {
   position: fixed;
-  top: 0;
+  top: -15;
   right: 0;
   padding: 10px;
   display: flex;
