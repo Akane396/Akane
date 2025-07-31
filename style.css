@@ -108,3 +108,9 @@ select:focus {
 .dropdown button {
   margin-left: -2.20px;
 }
+
+@media (max-width: 360px) {
+  .navbar {
+    top: -20px;
+  }
+}

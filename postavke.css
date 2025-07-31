@@ -78,3 +78,15 @@
     background: none;
     color: #ADB2E8;
   }
+
+@media (max-width: 360px) {
+  .svi {
+    margin-left: 5px;
+  }
+  h2 {
+    margin-left: 80px;
+  }
+  #hanimec {
+    left: 320px;
+  }
+}
