@@ -81,9 +81,9 @@ select:focus {
   background-color: #2c2c3a;
 }
 
-@media (max-width: 360px;) {
- #odhavise {
-  top: 18px;
-  right: 10px;
- }
+@media (max-width: 360px) {
+  #odhavise {
+    top: 18px;
+    right: 10px;
+  }
 }
