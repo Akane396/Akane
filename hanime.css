@@ -82,5 +82,8 @@ select:focus {
 }
 
 @media (max-width: 360px;) {
- top: 5px;
+ #odhavise {
+  top: 18px;
+  right: 10px;
+ }
 }
