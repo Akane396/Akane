@@ -90,3 +90,15 @@
     left: 320px;
   }
 }
+
+  @media (width: 1024px) {
+    .svi {
+      margin-left: 500px;
+    }
+    
+    h2 {
+      margin-left: 500px;
+    }
+    
+    
+  }
