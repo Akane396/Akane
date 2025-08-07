@@ -9,4 +9,20 @@
   padding: 0;
 }
 
+#vrati {
+	z-index: 50;
+	position: fixed;
+	top: 17px;
+	left: 4px;
+	border: none;
+	background: none;
+}
 
+#vrati>img {
+	width: 30px;
+	height: 30px;
+}
+
+#onama {
+	font-size: 30px;
+}
